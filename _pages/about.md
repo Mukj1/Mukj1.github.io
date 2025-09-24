@@ -7,9 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+I completed my undergraduate and master's degrees at Beijing Sport University. Currently, I am taking a gap year and preparing for my PhD application.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am a researcher in sports management, and I am also a sports enthusiast. I enjoy outdoor activities, especially hiking and cycling. Additionally, I am an esports fan and I am particularly fond of CS.
+
+I have various interests. I love rock music, whether it’s Midwest emo or post-punk. I’m also into fashion, especially the combination of sports and fashion. Welcome communication in various fields.
 
 A data-driven personal website
 ======
