@@ -19,16 +19,16 @@
       "courses": []
     }
   ],
-  "skills": {
-    "Programming Languages": [
+  "skills": [
+    "Programming Languages": {
       "Python",
       "R"
-    ],
-    "Softwares": [
+    },
+    "Softwares": {
       "SmartPLS",
       "SPSS"
-    ]
-  },
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
