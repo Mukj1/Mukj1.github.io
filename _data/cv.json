@@ -21,17 +21,17 @@
   ],
   "skills": [
     {
-    "Programming Languages": {
-      "Python",
-      "R"
-    },
+      "Programming Languages": [
+        "Python",
+        "R"
+      ]
     },
     {
-    "Softwares": {
-      "SmartPLS",
-      "SPSS"
+      "Softwares": [
+        "SmartPLS",
+        "SPSS"
+      ]
     }
-    },
   ],
   "languages": [],
   "interests": [],
