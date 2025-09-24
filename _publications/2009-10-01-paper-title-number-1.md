@@ -1,9 +1,9 @@
 ---
-title: "The spillover effect of Chinese sportswear brands relationship quality a perspective of Confucian yuanfen culture"
+title: "The spillover effect of Chinese sportswear brands' relationship quality: a perspective of Confucian yuanfen culture"
 collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This study explores how Chinese consumers' shifting preferences from foreign to domestic sportswear brands are influenced by brand relationship quality, using a Confucian yuanfen cultural framework.'
+excerpt: 'This study explores how Chinese consumers' shifting preferences from foreign to domestic sportswear'
 date: 2009-10-01
 venue: 'Journal 1'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
