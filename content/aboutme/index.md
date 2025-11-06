@@ -3,8 +3,6 @@ title: "About Me"
 description: "Background Info"
 ---
 
-# About Me
-
 ## Research Interests
 
 As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate about exploring how sport management and marketing can foster sustainable development. My research interests focus on green marketing of sportswear brands and outdoor sport experiences. At the same time, I am also interested in the fashion dimension of sportswear, exploring how the integration of aesthetics and functionality shapes sport consumption culture.
