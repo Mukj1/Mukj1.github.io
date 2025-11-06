@@ -24,17 +24,17 @@ As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate abou
 ## Education
 
 ### Master
-*Humanities and Social Sciences of Sports*  
+**Humanities and Social Sciences of Sports**  
 **Beijing Sport University**  
-**Duration:** 08/2022 – 06/2025  
-**GPA:** 3.90/4  
+Duration: 08/2022 – 06/2025  
+GPA: 3.90/4  
 
 ---
 
 ### Bachelor
-*Sport Economics and Management*  
+**Sport Economics and Management**  
 **Beijing Sport University**  
-**Duration:** 08/2018 – 06/2022  
-**GPA:** 3.58/4
+Duration: 08/2018 – 06/2022  
+GPA: 3.58/4
 
 ---
