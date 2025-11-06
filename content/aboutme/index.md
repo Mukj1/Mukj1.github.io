@@ -9,22 +9,18 @@ As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate abou
 
 <div style="display: flex; justify-content: space-between;">
 
-  <div style="flex: 1; margin-right: 20px; text-align: left;">
-    <h3 style="margin-bottom: 10px;">Key Research Areas</h3>
-    <ul style="list-style-position: inside; padding-left: 20px;">
-      <li>Sports Marketing</li>
-      <li>Sustainable Marketing</li>
-      <li>Outdoor Sports</li>
-      <li>Sportswear Brand</li>
-    </ul>
+  <div style="flex: 1; margin-right: 20px;">
+    <h3>Key Research Areas</h3>
+    <p>Sports Marketing</p>
+    <p>Sustainable Marketing</p>
+    <p>Outdoor Sports</p>
+    <p>Sportswear Brand</p>
   </div>
 
-  <div style="flex: 1; text-align: left;">
-    <h3 style="margin-bottom: 10px;">Skills</h3>
-    <ul style="list-style-position: inside; padding-left: 20px;">
-      <li>Python</li>
-      <li>R</li>
-    </ul>
+  <div style="flex: 1;">
+    <h3>Skills</h3>
+    <p>Python</p>
+    <p>R</p>
   </div>
 
 </div>
