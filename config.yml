@@ -77,7 +77,7 @@ params:
 
     socialIcons:
         - name: CV
-          url: cv.pdf
+          url: Ruichen_CV.pdf
         - name: Email
           url: mailto:jrcyang08@outlook.com
         - name: Google Scholar
