@@ -21,9 +21,9 @@ menu:
         - name: Courses
           url: courses/
           weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
+        - name: About Me
+          url: About Me/
+          weight: 1 
         - name: Blog
           url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
           weight: 6
@@ -44,7 +44,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["About Me","books","courses","papers"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -55,15 +55,15 @@ params:
     profileMode:
           enabled: true
           title: Ruichen Yang 杨睿辰
-          subtitle: "As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate about exploring how sport management and marketing can foster sustainable development. My research interests focus on green marketing of sportswear brand and outdoor sport experience. At the same time, I am also interested in the fashion dimension of sportswear, exploring how the integration of aesthetics and functionality shapes sport consumption culture."
+          subtitle: "Welcome to my space. I'm an outdoor sports enthusiast (especially cycling), a rock music fan, and a Counter-Strike player. I enjoy making new friends and welcome conversations from all walks of life. Through these communications, we can discover more of the world's intricacies and find joy in the details."
           imageUrl: "avatar.png"
           imageWidth: 160
           imageHeight: 160
           buttons:
             - name: Papers
               url: papers/
-            - name: Data
-              url: data/
+            - name: About Me
+              url: About Me/
             - name: Books
               url: books/
             - name: Courses
