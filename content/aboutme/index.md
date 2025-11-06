@@ -10,17 +10,21 @@ As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate abou
 <div style="display: flex; justify-content: space-between;">
 
   <div style="flex: 1; margin-right: 20px;">
-    ### Key Research Areas
-    - **Sports Marketing**
-    - **Sustainable Marketing**
-    - **Outdoor Sports**
-    - **Sportswear Brand**
+    <h3>Key Research Areas</h3>
+    <ul>
+      <li><strong>Sports Marketing</strong></li>
+      <li><strong>Sustainable Marketing</strong></li>
+      <li><strong>Outdoor Sports</strong></li>
+      <li><strong>Sportswear Brand</strong></li>
+    </ul>
   </div>
 
   <div style="flex: 1;">
-    ### Skills
-    - **Python**
-    - **R**
+    <h3>Skills</h3>
+    <ul>
+      <li><strong>Python</strong></li>
+      <li><strong>R</strong></li>
+    </ul>
   </div>
 
 </div>
@@ -31,7 +35,7 @@ As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate abou
 ## Education
 
 ### Master
-*Humanities and Social Sciences of Sports*
+*Humanities and Social Sciences of Sports*  
 **Beijing Sport University**  
 **Duration:** 08/2022 – 06/2025  
 **GPA:** 3.90/4  
