@@ -20,7 +20,7 @@ disableAnchoredHeadings: false
 
 #### My logo
 
-![logo](r.jpg)
+![logo](r.jpg){ width=500 height=500 loading=lazy }
 
 This logo is based on the letter "R," which is the first letter of Ruichen. It incorporates elements of mountains, reflecting my love for nature.
 
