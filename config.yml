@@ -12,8 +12,8 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
-          url: books/
+        - name: Mukj1's log
+          url: log/
           weight: 5 
         - name: Research
           url: papers/
@@ -59,8 +59,8 @@ params:
               url: aboutme/
             - name: Research
               url: papers/
-            - name: Books
-              url: books/
+            - name: Mukj1's log
+              url: log/
 
 
     socialIcons:
