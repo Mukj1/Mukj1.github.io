@@ -7,33 +7,41 @@ description: "Background Info"
 
 As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate about exploring how sport management and marketing can foster sustainable development. My research interests focus on green marketing of sportswear brands and outdoor sport experiences. At the same time, I am also interested in the fashion dimension of sportswear, exploring how the integration of aesthetics and functionality shapes sport consumption culture.
 
-- **Sports Marketing**
-- **Sustainable Marketing**
-- **Outdoor Sports**
-- **Sportswear Brand**
+<div style="display: flex; justify-content: space-between;">
+
+  <div style="flex: 1; margin-right: 20px;">
+    ### Key Research Areas
+    - **Sports Marketing**
+    - **Sustainable Marketing**
+    - **Outdoor Sports**
+    - **Sportswear Brand**
+  </div>
+
+  <div style="flex: 1;">
+    ### Skills
+    - **Python**
+    - **R**
+  </div>
+
+</div>
+
 
 ---
 
-## Skills
+## Education
 
-- **Python**
-- **R**
-
-
----
-
-# Education
-
-## Master's in Humanities and Social Sciences of Sports  
+### Master
+*Humanities and Social Sciences of Sports*
 **Beijing Sport University**  
 **Duration:** 08/2022 – 06/2025  
-**GPA:** 3.90/4 | **Merit:** 90.82/100  
+**GPA:** 3.90/4  
 
 ---
 
-## Bachelor's in Sport Economics and Management  
+### Bachelor
+*Sport Economics and Management*  
 **Beijing Sport University**  
 **Duration:** 08/2018 – 06/2022  
-**GPA:** 3.58/4 | **Merit:** 85.40/100
+**GPA:** 3.58/4
 
 ---
