@@ -23,6 +23,8 @@ As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate abou
 
 ## Education
 
+---
+
 ### Master
 **Humanities and Social Sciences of Sports**  
 **Beijing Sport University**  
