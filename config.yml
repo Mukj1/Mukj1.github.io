@@ -15,18 +15,13 @@ menu:
         - name: Books
           url: books/
           weight: 5 
-        - name: Papers
+        - name: Research
           url: papers/
           weight: 2
-        - name: Courses
-          url: courses/
-          weight: 3
         - name: About Me
           url: aboutme/
           weight: 1 
-        - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
+
 
 params:
     description: "This website hosts Ruichen's research progress, curriculum vitae, and contact information."
@@ -62,18 +57,11 @@ params:
           buttons:
             - name: About Me
               url: aboutme/
-            - name: Papers
+            - name: Research
               url: papers/
             - name: Books
               url: books/
-            - name: Courses
-              url: courses/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-            - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+
 
     socialIcons:
         - name: CV
