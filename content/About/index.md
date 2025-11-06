@@ -1,5 +1,6 @@
 ---
 title: "About Me"
+description: "Background Info"
 ---
 
 # About Me
@@ -20,7 +21,6 @@ As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate abou
 - **Python**: Experienced with data analysis, machine learning (e.g., topic modeling, classification), and web scraping.
 - **R**: Proficient in statistical analysis, data visualization, and text mining.
 
----
 
 ---
 
