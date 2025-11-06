@@ -1,7 +1,7 @@
 ---
 title: "Why Mukj1?" 
 date: 2025-01-01
-author: ["Ruichen"]
+author: ["Mukj1"]
 description: "This explains why my online username is mukj1."
 summary: "This explains why my online username is mukj1."
 cover:
