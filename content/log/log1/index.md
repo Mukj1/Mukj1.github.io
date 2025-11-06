@@ -1,7 +1,7 @@
 ---
 title: "Avatars by Sora" 
 date: 2025-09-24
-author: ["Moritz-Maria von Igelfeld"]
+author: ["Mukj1"]
 description: "These are avatars created by Sora."
 summary: "These are avatars created by Sora."
 cover:
