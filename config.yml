@@ -60,10 +60,10 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Papers
-              url: papers/
             - name: About Me
               url: aboutme/
+            - name: Papers
+              url: papers/
             - name: Books
               url: books/
             - name: Courses
