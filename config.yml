@@ -29,8 +29,8 @@ menu:
           weight: 6
 
 params:
-    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
-    author: Moritz-Maria von Igelfeld
+    description: "This website hosts Ruichen's research progress, curriculum vitae, and contact information."
+    author: Ruichen Yang
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -54,9 +54,9 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
+          title: Ruichen Yang
+          subtitle: "As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate about exploring how sport management and marketing can foster sustainable development. My research interests focus on green marketing of sportswear brand and outdoor sport experience. At the same time, I am also interested in the fashion dimension of sportswear, exploring how the integration of aesthetics and functionality shapes sport consumption culture."
+          imageUrl: "avatar.png"
           imageWidth: 160
           imageHeight: 160
           buttons:
@@ -79,25 +79,15 @@ params:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensburg.edu
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
+          url: mailto:jrcyang08@outlook.com
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://scholar.google.com/citations?user=i4R9ZRsAAAAJ&hl=en
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
-        - name: Twitter
-          url: https://x.com/pmichaillat
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
+          url: https://github.com/Mukj1
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/ruichen-yang-3094562b3
+        - name: ORCID
+          url: https://orcid.org/0009-0003-8081-453X
 
     assets:
         disableScrollBarStyle: true
@@ -105,7 +95,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Ruichen Yang"
       icon: favicon.ico
       iconHeight: 18
 
