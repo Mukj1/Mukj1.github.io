@@ -1,5 +1,5 @@
 ---
-title: 'The Influence of Immersion on Revisit Intention: Empirical Evidence from Tourists at the Beijing Winter Olympic Venue "Snow Ruyi" (in press)' 
+title: 'The influence of immersion on revisit intention: Empirical evidence from tourists at the Beijing Winter Olympic venue "Snow Ruyi" (in press)' 
 date: 2025-11-01
 author: ["Song, H., Gao, J., Fan, S., Yang, R., and Liu, Z."]
 description: 'This study explores how immersion at the "Snow Ruyi" venue, a Winter Olympic legacy site, influences place attachment and revisit intention.' 
