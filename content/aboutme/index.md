@@ -23,7 +23,7 @@ As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate abou
 
 ## Education
 
----
+
 
 ### Master
 **Humanities and Social Sciences of Sports**  
@@ -31,7 +31,7 @@ As an outdoorsy person, I enjoy road cycling and hiking. So I am passionate abou
 Duration: 08/2022 – 06/2025  
 GPA: 3.90/4  
 
----
+
 
 ### Bachelor
 **Sport Economics and Management**  
