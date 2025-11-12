@@ -85,7 +85,7 @@ params:
         hiddenInSingle: true
     label:
       text: "Ruichen Yang"
-      icon: r_logo.svg
+      icon: favicon.ico
       iconHeight: 18
 
 markup:
