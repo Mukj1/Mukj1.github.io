@@ -25,6 +25,22 @@ This study explores the spillover effect of Chinese domestic sportswear brands' 
 
 **Yang, R**. and Song, H. (2024). The spillover effect of Chinese sportswear brands’ relationship quality: a perspective of Confucian yuanfen culture, *International Journal of Sports Marketing and Sponsorship*, Vol. 25 No. 5, pp. 1105-1125.
 
+```latex
+@article{10.1108/IJSMS-02-2024-0049,
+    author = {Yang, Ruichen and Song, Hemin},
+    title = {The spillover effect of Chinese sportswear brands' relationship quality: a perspective of Confucian yuanfen culture},
+    journal = {International Journal of Sports Marketing and Sponsorship},
+    volume = {25},
+    number = {5},
+    pages = {1105-1125},
+    year = {2024},
+    month = {07},
+    issn = {1464-6668},
+    doi = {10.1108/IJSMS-02-2024-0049},
+    url = {https://doi.org/10.1108/IJSMS-02-2024-0049},
+    eprint = {https://www.emerald.com/ijsms/article-pdf/25/5/1105/9548001/ijsms-02-2024-0049.pdf},
+}
+```
 
 ---
 
