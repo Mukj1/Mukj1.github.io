@@ -146,7 +146,7 @@ export const GALLERY_IMAGES = [
 export const FOCUS_AREAS = [
   "Sports Marketing",
   "Outdoor Sports",
-  "Sportswear",
+  "Sportswear Brand",
   "Multimodal Analysis"
 ];
 
@@ -154,6 +154,8 @@ export const RESEARCH_SKILLS = [
   "Python",
   "R",
 ];
+
+
 
 
 

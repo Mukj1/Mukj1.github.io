@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { Navigation } from './components/Navigation';
+import { BackToTopButton } from './components/BackToTopButton';
 import { About } from './components/views/About';
 import { Research } from './components/views/Research';
 import { Log } from './components/views/Log';
@@ -9,6 +10,7 @@ import { View } from './types';
 function App() {
   const [currentView, setCurrentView] = useState<View>('about');
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const mainScrollRef = useRef<HTMLElement | null>(null);
 
   // Initialize Theme from LocalStorage or System Preference
   useEffect(() => {
@@ -65,16 +67,18 @@ function App() {
       <Sidebar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
 
       {/* Main: Independent scroll container only on Desktop */}
-      <main className="flex-1 w-full flex flex-col min-w-0 relative lg:h-full lg:overflow-y-auto scroll-smooth">
+      <main ref={mainScrollRef} className="flex-1 w-full flex flex-col min-w-0 relative lg:h-full lg:overflow-y-auto scroll-smooth">
         
         {/* Navigation sticks to the top of this scrolling container */}
         <Navigation currentView={currentView} onChangeView={setCurrentView} />
 
-        <div className={`flex-1 px-6 lg:px-8 pb-24 mx-auto w-full pt-4 lg:pt-8 transition-all duration-700 ease-in-out ${getContainerWidth()}`}>
+        <div className={`content-justify flex-1 px-6 lg:px-8 pb-24 mx-auto w-full pt-4 lg:pt-8 transition-all duration-700 ease-in-out ${getContainerWidth()}`}>
           {renderContent()}
         </div>
 
       </main>
+
+      <BackToTopButton scrollContainerRef={mainScrollRef} />
     </div>
   );
 }

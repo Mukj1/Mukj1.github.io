@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { PROFILE, FOCUS_AREAS, RESEARCH_SKILLS, SOCIAL_LINKS } from '../../constants';
 import { Building2, MapPin, FileText } from 'lucide-react';
 
@@ -67,13 +67,14 @@ export const About: React.FC = () => {
         
         <div className="text-xl text-slate-600 dark:text-slate-300 font-light leading-relaxed max-w-4xl space-y-6">
           <p>
-            Welcome to my space. I am an outdoor sports enthusiast (especially cycling), a rock music fan, and a Counter-Strike player.
+            Welcome to my space. My name is Ruichen Yang. You can call me by my English name, John.
+            I am an outdoor sports enthusiast (especially cycling), a rock music fan, and a Counter-Strike player.
             I enjoy making new friends and welcome conversations from all walks of life. Through these communications, we can discover
             more of the world&apos;s intricacies and find joy in the details.
           </p>
           <p>
             My academic journey began at Beijing Sport University, where I completed my undergraduate and master&apos;s studies.
-            During my graduate studies, I developed the research foundation under the mentorship of{" "}
+            During my master&apos;s studies,{" "}
             <a
               href="https://glxy.bsu.edu.cn/xygk/szdw/jys/d3b2b9f818534a8f84727e02a6c04f86.htm"
               target="_blank"
@@ -82,7 +83,8 @@ export const About: React.FC = () => {
             >
               Dr. Hemin Song
             </a>
-            . Now, I look forward to working with{" "}
+            {" "}helped me build a solid foundation in research and guided me in completing and publishing my first research paper.
+            Currently, I look forward to pursuing my PhD under the supervision of{" "}
             <a
               href="https://tyrealq.github.io/"
               target="_blank"
@@ -90,12 +92,12 @@ export const About: React.FC = () => {
               className="text-violet-400 hover:underline"
             >
               Dr. Yizhou (Tyreal) Qian
-            </a>{" "}
-            for my PhD. I plan to focus on using AI-related techniques to advance my research in sport management.
+            </a>
+            . More specifically, I look forward to exploring the application of AI-related research techniques in my future work.
           </p>
           <p>
             As an outdoorsy person, I enjoy road cycling and hiking. My sport experiences have not only fueled my passion for the outdoors
-            but also showed me that sports and nature go hand in hand. So I am passionate about exploring how sport management and marketing
+            but also shown me that sports and nature go hand in hand. So I am passionate about exploring how sport management and marketing
             can foster sustainable development. My research interests focus on green marketing of sportswear brands and outdoor sport experiences.
             At the same time, I am also interested in the fashion dimension of sportswear, exploring how the integration of aesthetics and
             functionality shapes sport consumption culture.
@@ -170,3 +172,4 @@ export const About: React.FC = () => {
     </div>
   );
 };
+
