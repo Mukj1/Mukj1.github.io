@@ -8,19 +8,41 @@ interface ResearchDetailProps {
 }
 
 const renderSimpleMarkdown = (text: string) => {
-  const blocks = text.split(/\n{2,}/).map((b) => b.trim()).filter(Boolean);
+  const renderInlineLinks = (input: string, keyPrefix: string) => {
+    const parts = input.split(/(\[[^\]]+\]\([^)]+\))/g).filter(Boolean);
+    return parts.map((part, i) => {
+      const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+      if (match) {
+        return (
+          <a
+            key={`${keyPrefix}-${i}`}
+            href={match[2]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-violet-600 dark:text-violet-400 underline underline-offset-2 hover:opacity-80"
+          >
+            {match[1]}
+          </a>
+        );
+      }
+      return <React.Fragment key={`${keyPrefix}-${i}`}>{part}</React.Fragment>;
+    });
+  };
+
+  const normalized = text.replace(/\r\n/g, '\n');
+  const blocks = normalized.split(/\n{2,}/).map((b) => b.trim()).filter(Boolean);
   return blocks.map((block, idx) => {
     if (block.startsWith('### ')) {
-      return <h4 key={idx} className="text-lg font-serif font-medium text-slate-800 dark:text-slate-200 mt-8 mb-3">{block.replace(/^###\s+/, '')}</h4>;
+      return <h4 key={idx} className="text-lg font-serif font-medium text-slate-800 dark:text-slate-200 mt-8 mb-3">{renderInlineLinks(block.replace(/^###\s+/, ''), `h4-${idx}`)}</h4>;
     }
     if (block.startsWith('## ')) {
-      return <h3 key={idx} className="text-xl font-serif text-slate-900 dark:text-slate-100 mt-10 mb-4">{block.replace(/^##\s+/, '')}</h3>;
+      return <h3 key={idx} className="text-xl font-serif text-slate-900 dark:text-slate-100 mt-10 mb-4">{renderInlineLinks(block.replace(/^##\s+/, ''), `h3-${idx}`)}</h3>;
     }
     if (block.startsWith('# ')) {
-      return <h2 key={idx} className="text-2xl lg:text-3xl font-serif text-slate-900 dark:text-slate-100 mt-12 mb-6 first:mt-0">{block.replace(/^#\s+/, '')}</h2>;
+      return <h2 key={idx} className="text-2xl lg:text-3xl font-serif text-slate-900 dark:text-slate-100 mt-12 mb-6 first:mt-0">{renderInlineLinks(block.replace(/^#\s+/, ''), `h2-${idx}`)}</h2>;
     }
     if (block.startsWith('> ')) {
-      return <blockquote key={idx} className="border-l-2 border-violet-500 pl-6 italic text-slate-700 dark:text-slate-400 my-8 text-xl font-serif bg-slate-50 dark:bg-slate-900/50 py-4 pr-4 rounded-r-sm">{block.replace(/^>\s+/, '')}</blockquote>;
+      return <blockquote key={idx} className="border-l-2 border-violet-500 pl-6 italic text-slate-700 dark:text-slate-400 my-8 text-xl font-serif bg-slate-50 dark:bg-slate-900/50 py-4 pr-4 rounded-r-sm">{renderInlineLinks(block.replace(/^>\s+/, ''), `quote-${idx}`)}</blockquote>;
     }
     if (block === '---') {
       return <hr key={idx} className="border-slate-200 dark:border-slate-800 my-12" />;
@@ -40,13 +62,24 @@ const renderSimpleMarkdown = (text: string) => {
       return (
         <ul key={idx} className="list-disc list-outside ml-4 space-y-2 mb-6 text-slate-600 dark:text-slate-300 font-light text-lg">
           {lines.map((line, liIdx) => (
-            <li key={liIdx} className="pl-1">{line.replace(/^[-*]\s+/, '')}</li>
+            <li key={liIdx} className="pl-1">{renderInlineLinks(line.replace(/^[-*]\s+/, ''), `ul-${idx}-${liIdx}`)}</li>
           ))}
         </ul>
       );
     }
 
-    return <p key={idx} className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-light mb-6 whitespace-pre-wrap">{block}</p>;
+    const isOrderedList = lines.every((line) => /^\d+\.\s+/.test(line));
+    if (isOrderedList) {
+      return (
+        <ol key={idx} className="list-decimal list-outside ml-5 space-y-2 mb-6 text-slate-600 dark:text-slate-300 font-light text-lg">
+          {lines.map((line, liIdx) => (
+            <li key={liIdx} className="pl-1">{renderInlineLinks(line.replace(/^\d+\.\s+/, ''), `ol-${idx}-${liIdx}`)}</li>
+          ))}
+        </ol>
+      );
+    }
+
+    return <p key={idx} className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-light mb-6 whitespace-pre-wrap">{renderInlineLinks(block, `p-${idx}`)}</p>;
   });
 };
 
@@ -54,6 +87,17 @@ export const ResearchDetail: React.FC<ResearchDetailProps> = ({ paper, onBack })
   const [content, setContent] = useState<string>('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
+  const highlightYang = (text: string) => {
+    return text.split(/(Yang,\s*R\.)/g).map((part, idx) =>
+      /^Yang,\s*R\.$/.test(part) ? (
+        <span key={idx} className="font-semibold text-violet-700 dark:text-violet-400">{part}</span>
+      ) : (
+        <React.Fragment key={idx}>{part}</React.Fragment>
+      )
+    );
+  };
+  const isConference = paper.id.startsWith('c');
+  const venueLabel = isConference ? 'Presented At' : 'Published In';
   const publisherUrl = paper.publisherUrl || paper.codeUrl;
   const isCanvaPdf = !!paper.pdfUrl && /(^https?:\/\/)?(www\.)?canva\.com/i.test(paper.pdfUrl);
   const canvaEmbedUrl = isCanvaPdf && paper.pdfUrl
@@ -107,7 +151,7 @@ export const ResearchDetail: React.FC<ResearchDetailProps> = ({ paper, onBack })
 
         <div className="flex flex-col md:flex-row md:items-center gap-4 text-slate-500 dark:text-slate-400 font-light">
            <span className="italic font-serif text-lg">
-             {paper.authors.join(", ")}
+             {highlightYang(paper.authors.join(", "))}
            </span>
            <span className="hidden md:block text-slate-300 dark:text-slate-600">•</span>
            <span className="font-sans text-sm">
@@ -146,20 +190,6 @@ export const ResearchDetail: React.FC<ResearchDetailProps> = ({ paper, onBack })
         )}
       </div>
 
-      {canvaEmbedUrl && (
-        <section className="mb-12">
-          <div className="w-full aspect-video bg-slate-100 dark:bg-slate-800 rounded-sm overflow-hidden border border-slate-200 dark:border-slate-700">
-            <iframe
-              src={canvaEmbedUrl}
-              title={`${paper.title} slides`}
-              className="w-full h-full"
-              loading="lazy"
-              allowFullScreen
-            />
-          </div>
-        </section>
-      )}
-
       {/* Content Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_240px] gap-16">
         
@@ -172,6 +202,20 @@ export const ResearchDetail: React.FC<ResearchDetailProps> = ({ paper, onBack })
                {paper.abstract}
              </p>
            </section>
+
+           {canvaEmbedUrl && (
+             <section>
+               <div className="w-full max-w-4xl aspect-[16/10] bg-slate-100 dark:bg-slate-800 rounded-sm overflow-hidden border border-slate-200 dark:border-slate-700">
+                 <iframe
+                   src={canvaEmbedUrl}
+                   title={`${paper.title} slides`}
+                   className="w-full h-full"
+                   loading="lazy"
+                   allowFullScreen
+                 />
+               </div>
+             </section>
+           )}
 
            {/* MARKDOWN CONTENT */}
            <div className="min-h-[200px]">
@@ -209,7 +253,7 @@ export const ResearchDetail: React.FC<ResearchDetailProps> = ({ paper, onBack })
         {/* Sidebar Column (Metadata) */}
         <div className="space-y-8">
             <div>
-              <h4 className="font-mono text-xs text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3">Published In</h4>
+              <h4 className="font-mono text-xs text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3">{venueLabel}</h4>
               <p className="text-slate-800 dark:text-slate-200 font-serif italic">{paper.conference}</p>
             </div>
             

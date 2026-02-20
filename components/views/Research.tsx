@@ -6,6 +6,15 @@ import { ResearchPaper } from '../../types';
 
 export const Research: React.FC = () => {
   const [selectedPaper, setSelectedPaper] = useState<ResearchPaper | null>(null);
+  const highlightYang = (text: string) => {
+    return text.split(/(Yang,\s*R\.)/g).map((part, idx) =>
+      /^Yang,\s*R\.$/.test(part) ? (
+        <span key={idx} className="font-semibold text-violet-700 dark:text-violet-400">{part}</span>
+      ) : (
+        <React.Fragment key={idx}>{part}</React.Fragment>
+      )
+    );
+  };
 
   if (selectedPaper) {
     return <ResearchDetail paper={selectedPaper} onBack={() => setSelectedPaper(null)} />;
@@ -52,8 +61,8 @@ export const Research: React.FC = () => {
             </p>
             
             <div className="flex items-center gap-2 mt-2">
-               <span className="text-sm text-slate-400 dark:text-slate-500 italic font-serif">
-                {item.authors.join(", ")}
+              <span className="text-sm text-slate-400 dark:text-slate-500 italic font-serif">
+                {highlightYang(item.authors.join(", "))}
                 <span className="opacity-60 ml-2 font-normal not-italic font-sans text-xs">
                    | {item.conference}
                 </span>

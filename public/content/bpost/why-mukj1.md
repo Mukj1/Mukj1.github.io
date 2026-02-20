@@ -1,0 +1,3 @@
+﻿## Why Mukj1?
+
+To explain this, I first need to introduce the traditional Chinese character for my surname "Yang (杨)", which is "楊" in its traditional form. And the character "楊" can be broken down into the two characters "木" and "易". And since I really enjoy Cantonese songs, I decided to use the Cantonese pronunciations of "木" and "易," which are "muk" and "ji." At the same time, I was inspired by the usernames of professional Counter-Strike players, who often use numbers to replace letters that look similar, like using 0 for o and 3 for E. So, I replaced the "i" with 1, which gave me "mukj1."

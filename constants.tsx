@@ -118,8 +118,8 @@ export const LOG_DATA: LogEntry[] = [
     title: "FOMO in this AI era",
     summary: "I have been struggling with feelings of FOMO, but I'm trying to work through them.",
     category: "Dev",
-    image: "/images/logs/fomo.png",
-    fileUrl: "/content/logs/FOMO.md"
+    image: "/images/bpost/fomo.png",
+    fileUrl: "/content/bpost/FOMO.md"
   },
   {
     id: "l2",
@@ -127,8 +127,8 @@ export const LOG_DATA: LogEntry[] = [
     title: "Why Mukj1?",
     summary: "This explains why my online username is mukj1.",
     category: "Life",
-    image: "/images/logs/mukj1.png",
-    fileUrl: "/content/logs/why-mukj1.md"
+    image: "/images/bpost/mukj1.png",
+    fileUrl: "/content/bpost/why-mukj1.md"
   }
 ];
 
@@ -154,3 +154,8 @@ export const RESEARCH_SKILLS = [
   "Python",
   "R",
 ];
+
+
+
+
+

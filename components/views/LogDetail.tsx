@@ -8,7 +8,8 @@ interface LogDetailProps {
 }
 
 const renderSimpleMarkdown = (text: string) => {
-  const blocks = text.split(/\n{2,}/).map((b) => b.trim()).filter(Boolean);
+  const normalized = text.replace(/\r\n/g, '\n');
+  const blocks = normalized.split(/\n{2,}/).map((b) => b.trim()).filter(Boolean);
   return blocks.map((block, idx) => {
     if (block.startsWith('### ')) {
       return <h4 key={idx} className="text-lg font-serif font-medium text-slate-800 dark:text-slate-200 mt-8 mb-3">{block.replace(/^###\s+/, '')}</h4>;
