@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'IBM Plex Sans', 'Arial', sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #ebebff;
+    color: #1e1c4d;
+  }
+
+  .dark ::selection {
+    background: #323080;
+    color: #ebebff;
+  }
+
+  a {
+    text-decoration-skip-ink: none;
+  }
+}
+
+@layer components {
+  .animate-slide-in {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+  }
+
+  .content-justify p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+@layer utilities {
+  html:not(.dark) .text-slate-600 {
+    color: #1e293b;
+  }
+
+  html:not(.dark) .text-slate-500 {
+    color: #334155;
+  }
+
+  html:not(.dark) .text-slate-400 {
+    color: #475569;
+  }
+
+  html:not(.dark) .text-slate-700 {
+    color: #0f172a;
+  }
+}

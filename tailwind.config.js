@@ -2,14 +2,15 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./**/*.{js,ts,jsx,tsx}",
+    "./*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./services/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: 'class', // Enable class-based dark mode
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['IBM Plex Sans', 'Arial', 'sans-serif'],
         serif: ['Cormorant Garamond', 'serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { LogEntry } from '../../types';
 import { ArrowLeft, Loader2 } from 'lucide-react';
+import { toPublicUrl } from '../../services/publicPath';
 
 interface LogDetailProps {
   entry: LogEntry;
@@ -55,12 +56,13 @@ export const LogDetail: React.FC<LogDetailProps> = ({ entry, onBack }) => {
   const [content, setContent] = useState<string>('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
+  const contentUrl = entry.fileUrl ? toPublicUrl(entry.fileUrl) : '';
 
   useEffect(() => {
     if (entry.fileUrl) {
       setIsLoading(true);
       setError(false);
-      fetch(entry.fileUrl)
+      fetch(contentUrl)
         .then(res => {
           if (!res.ok) throw new Error("Failed to load content");
           return res.text();
@@ -74,7 +76,7 @@ export const LogDetail: React.FC<LogDetailProps> = ({ entry, onBack }) => {
     } else {
       setContent(entry.summary); // Fallback to summary if no file
     }
-  }, [entry.fileUrl, entry.summary]);
+  }, [contentUrl, entry.fileUrl, entry.summary]);
 
   return (
     <div className="animate-slide-in pb-20 max-w-3xl mx-auto">

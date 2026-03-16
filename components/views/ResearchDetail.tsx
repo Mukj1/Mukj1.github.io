@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ResearchPaper } from '../../types';
 import { ArrowLeft, FileText, Quote, ExternalLink, Loader2 } from 'lucide-react';
+import { toPublicUrl } from '../../services/publicPath';
 
 interface ResearchDetailProps {
   paper: ResearchPaper;
@@ -103,12 +104,13 @@ export const ResearchDetail: React.FC<ResearchDetailProps> = ({ paper, onBack })
   const canvaEmbedUrl = isCanvaPdf && paper.pdfUrl
     ? paper.pdfUrl.replace('/view?', '/view?embed&')
     : '';
+  const contentUrl = paper.fileUrl ? toPublicUrl(paper.fileUrl) : '';
 
   useEffect(() => {
     if (paper.fileUrl) {
       setIsLoading(true);
       setError(false);
-      fetch(paper.fileUrl)
+      fetch(contentUrl)
         .then(res => {
           if (!res.ok) throw new Error("Failed to load content");
           return res.text();
@@ -122,7 +124,7 @@ export const ResearchDetail: React.FC<ResearchDetailProps> = ({ paper, onBack })
     } else {
       setContent('');
     }
-  }, [paper.fileUrl]);
+  }, [contentUrl, paper.fileUrl]);
 
   return (
     <div className="animate-slide-in pb-20">
