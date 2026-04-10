@@ -10,7 +10,7 @@ export const About: React.FC = () => {
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.id = 'mapmyvisitors';
-    script.src = 'https://mapmyvisitors.com/map.js?cl=ffffff&w=830&t=tt&d=PvHeIWyOmsy95B_rZwGEXl6IZLRQgXuZLUgUoRH-Nok&co=d4caed&cmo=75cb02&cmn=363fe0&ct=808080';
+    script.src = 'https://mapmyvisitors.com/map.js?cl=6865ee&w=830&t=m&d=PvHeIWyOmsy95B_rZwGEXl6IZLRQgXuZLUgUoRH-Nok&co=f8fafc&ct=3d2154&cmo=8cc9e8&cmn=a8888b';
     container.appendChild(script);
   }, []);
 

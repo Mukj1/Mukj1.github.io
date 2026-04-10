@@ -30,7 +30,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isDarkMode, toggleTheme }) => 
             <h1 className="text-xl lg:text-4xl font-serif font-medium text-slate-900 dark:text-slate-100 tracking-tight leading-none lg:mb-2 whitespace-nowrap">
             {PROFILE.name}
             </h1>
-            <h2 className="hidden lg:block text-3xl font-serif text-black dark:text-black mb-4">{PROFILE.chineseName}</h2>
+            <h2 className="hidden lg:block text-3xl font-serif text-black dark:text-slate-100 mb-4">{PROFILE.chineseName}</h2>
             
             <p className="hidden lg:block text-xs font-mono text-violet-600 dark:text-violet-400 mt-2 tracking-widest uppercase border-t border-slate-200 dark:border-slate-800 pt-4 w-full">
             {PROFILE.title}
