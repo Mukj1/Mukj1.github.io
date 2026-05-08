@@ -94,7 +94,7 @@ export const About: React.FC = () => {
               Dr. Yizhou (Tyreal) Qian
             </a>
             . More specifically, I look forward to exploring the application of AI-related research techniques in my future work.{" "}
-            I also look forward to the opportunity to learn from{" "}
+            I would also value the opportunity to learn from{" "}
             <a
               href="https://www.paulmpedersen.com/"
               target="_blank"
