@@ -19,7 +19,7 @@ export const PROFILE = {
   name: "Ruichen Yang",
   chineseName: "杨睿辰",
   title: "Researcher",
-  affiliation: "TBD",
+  affiliation: "Indiana University Bloomington",
   bio: "Exploring the intersection of computational methods and social dynamics. I utilize data-driven approaches to uncover patterns in complex human behaviors.",
   email: "ruichen.yang@example.edu",
   location: "Jiaozuo, Henan, China",
@@ -133,14 +133,26 @@ export const LOG_DATA: LogEntry[] = [
 ];
 
 export const GALLERY_IMAGES = [
-  { src: "/images/moments/moment-1.jpg", alt: "Moment 1" },
-  { src: "/images/moments/moment-2.jpg", alt: "Moment 2" },
-  { src: "/images/moments/moment-3.jpg", alt: "Moment 3" },
-  { src: "/images/moments/moment-4.jpg", alt: "Moment 4" },
-  { src: "/images/moments/moment-5.jpg", alt: "Moment 5" },
-  { src: "/images/moments/moment-6.jpg", alt: "Moment 6" },
-  { src: "/images/moments/moment-7.jpg", alt: "Moment 7" },
-  { src: "/images/moments/moment-8.jpg", alt: "Moment 8" },
+  { src: "/images/moments/moment-1.jpeg", alt: "Moment 1" },
+  { src: "/images/moments/moment-2.jpeg", alt: "Moment 2" },
+  { src: "/images/moments/moment-3.jpeg", alt: "Moment 3" },
+  { src: "/images/moments/moment-4.jpeg", alt: "Moment 4" },
+  { src: "/images/moments/moment-5.jpeg", alt: "Moment 5" },
+  { src: "/images/moments/moment-6.jpeg", alt: "Moment 6" },
+  { src: "/images/moments/moment-7.jpeg", alt: "Moment 7" },
+  { src: "/images/moments/moment-8.jpeg", alt: "Moment 8" },
+  { src: "/images/moments/moment-9.jpeg", alt: "Moment 9" },
+  { src: "/images/moments/moment-10.jpeg", alt: "Moment 10" },
+  { src: "/images/moments/moment-11.jpeg", alt: "Moment 11" },
+  { src: "/images/moments/moment-12.jpeg", alt: "Moment 12" },
+  { src: "/images/moments/moment-1.jpg", alt: "Original Moment 1" },
+  { src: "/images/moments/moment-2.jpg", alt: "Original Moment 2" },
+  { src: "/images/moments/moment-3.jpg", alt: "Original Moment 3" },
+  { src: "/images/moments/moment-4.jpg", alt: "Original Moment 4" },
+  { src: "/images/moments/moment-5.jpg", alt: "Original Moment 5" },
+  { src: "/images/moments/moment-6.jpg", alt: "Original Moment 6" },
+  { src: "/images/moments/moment-7.jpg", alt: "Original Moment 7" },
+  { src: "/images/moments/moment-8.jpg", alt: "Original Moment 8" },
 ];
 
 export const FOCUS_AREAS = [
@@ -154,10 +166,5 @@ export const RESEARCH_SKILLS = [
   "Python",
   "R",
 ];
-
-
-
-
-
 
 

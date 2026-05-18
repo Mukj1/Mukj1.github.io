@@ -12,7 +12,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isDarkMode, toggleTheme }) => 
     // Layout: 
     // Mobile: w-full, h-auto, row layout, p-4, border-b
     // Desktop: w-80, h-full, col layout, p-12, border-r
-    <aside className="w-full lg:w-80 h-auto lg:h-full bg-white dark:bg-slate-900 border-b lg:border-b-0 lg:border-r border-slate-100 dark:border-slate-800 flex flex-row lg:flex-col items-center lg:items-start justify-between lg:justify-start p-4 lg:p-12 shrink-0 z-20 transition-colors duration-300 relative">
+    <aside className="w-full lg:w-[360px] h-auto lg:h-full bg-white dark:bg-slate-900 border-b lg:border-b-0 lg:border-r border-slate-100 dark:border-slate-800 flex flex-row lg:flex-col items-center lg:items-start justify-between lg:justify-start p-4 lg:p-12 shrink-0 z-20 transition-colors duration-300 relative">
       
       {/* Identity Group */}
       <div className="flex flex-row lg:flex-col items-center lg:items-start gap-4 lg:gap-0 lg:mb-12 animate-slide-in">
@@ -44,7 +44,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isDarkMode, toggleTheme }) => 
           <div className="w-6 h-6 flex items-center justify-center shrink-0 text-slate-700 dark:text-slate-400">
             <Building2 size={18} />
           </div>
-          <span className="leading-6">{PROFILE.affiliation}</span>
+          <span className="leading-6 whitespace-nowrap">{PROFILE.affiliation}</span>
         </div>
         
         <div className="flex items-start gap-3">

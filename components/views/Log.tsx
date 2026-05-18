@@ -8,6 +8,10 @@ import { Lightbox } from '../Lightbox';
 export const Log: React.FC = () => {
   const [selectedLog, setSelectedLog] = useState<LogEntry | null>(null);
   const [viewImage, setViewImage] = useState<string | null>(null);
+  const galleryColumns = [
+    GALLERY_IMAGES.filter((_, idx) => idx % 2 === 0),
+    GALLERY_IMAGES.filter((_, idx) => idx % 2 === 1),
+  ];
 
   if (selectedLog) {
     return <LogDetail entry={selectedLog} onBack={() => setSelectedLog(null)} />;
@@ -71,22 +75,23 @@ export const Log: React.FC = () => {
              <h3 className="text-sm font-mono text-violet-600 dark:text-violet-400 uppercase tracking-widest">Moments</h3>
           </header>
           
-          {/* Masonry Layout: columns-2 creates the layout, gap-4 creates horizontal space */}
-          <div className="columns-2 gap-4">
-            {GALLERY_IMAGES.map((img, idx) => (
-              <div 
-                key={idx} 
-                className="break-inside-avoid relative group mb-4 cursor-zoom-in"
-                onClick={() => setViewImage(img.src)}
-              >
-                 {/* w-full h-auto ensures the image respects its natural aspect ratio (21:9, 1:1, etc) */}
-                 <img 
-                   src={img.src} 
-                   alt={img.alt} 
-                   className="w-full h-auto block bg-slate-100 dark:bg-slate-800 grayscale-[0.2] hover:grayscale-0 transition-all duration-500 rounded-sm"
-                 />
-                 {/* Hover Overlay */}
-                 <div className="absolute inset-0 bg-violet-900/0 group-hover:bg-violet-900/10 transition-colors duration-300 pointer-events-none rounded-sm" />
+          <div className="grid grid-cols-2 gap-4">
+            {galleryColumns.map((column, columnIdx) => (
+              <div key={columnIdx} className="flex flex-col gap-4">
+                {column.map((img) => (
+                  <div 
+                    key={img.src} 
+                    className="relative group cursor-zoom-in"
+                    onClick={() => setViewImage(img.src)}
+                  >
+                    <img 
+                      src={img.src} 
+                      alt={img.alt} 
+                      className="w-full h-auto block bg-slate-100 dark:bg-slate-800 transition-transform duration-500 rounded-sm group-hover:scale-[1.01]"
+                    />
+                    <div className="absolute inset-0 bg-violet-900/0 group-hover:bg-violet-900/10 transition-colors duration-300 pointer-events-none rounded-sm" />
+                  </div>
+                ))}
               </div>
             ))}
           </div>
