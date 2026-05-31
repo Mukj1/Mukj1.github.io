@@ -21,14 +21,14 @@ export const PROFILE = {
   title: "Researcher",
   affiliation: "Indiana University Bloomington",
   bio: "Exploring the intersection of computational methods and social dynamics. I utilize data-driven approaches to uncover patterns in complex human behaviors.",
-  email: "ruichen.yang@example.edu",
+  email: "ruicyang@iu.edu",
   location: "Jiaozuo, Henan, China",
   avatar: "/images/profile/avatar.png", 
   cvLink: "/Ruichen_CV.pdf" 
 };
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { platform: "Email", url: "mailto:jrcyang08@outlook.com", icon: <Mail size={20} strokeWidth={1.5} /> },
+  { platform: "Email", url: "mailto:ruicyang@iu.edu", icon: <Mail size={20} strokeWidth={1.5} /> },
   { platform: "LinkedIn", url: "https://www.linkedin.com/in/ruichen-yang-3094562b3", icon: <Linkedin size={20} strokeWidth={1.5} /> },
   { platform: "Scholar", url: "https://scholar.google.com/citations?user=i4R9ZRsAAAAJ&hl=en", icon: <BookOpen size={20} strokeWidth={1.5} /> },
   { platform: "GitHub", url: "https://github.com/Mukj1", icon: <Github size={20} strokeWidth={1.5} /> },
@@ -166,5 +166,4 @@ export const RESEARCH_SKILLS = [
   "Python",
   "R",
 ];
-
 

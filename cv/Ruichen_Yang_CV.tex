@@ -1,0 +1,114 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.9in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\linespread{1.08}
+
+\definecolor{heading}{HTML}{1F2937}
+
+\titleformat{\section}
+  {\large\bfseries\color{heading}}
+  {}
+  {0em}
+  {}
+  [\vspace{0.2em}\titlerule]
+\titlespacing*{\section}{0pt}{1.25em}{0.75em}
+
+\setlist[itemize]{
+  leftmargin=1.4em,
+  itemsep=0.35em,
+  topsep=0.2em,
+  parsep=0pt
+}
+
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{1.45in}@{}}
+    \textbf{#1} & #2 \\
+    \textit{#3} & #4 \\
+  \end{tabularx}
+}
+
+\newcommand{\publication}[1]{%
+  \hangindent=1.2em
+  \hangafter=1
+  #1\par\vspace{0.45em}
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Ruichen Yang}\\[0.45em]
+  Indiana University Bloomington \;|\;
+  \href{mailto:ruicyang@iu.edu}{ruicyang@iu.edu} \;|\;
+  \href{https://scholar.google.com/citations?user=i4R9ZRsAAAAJ&hl=en&inst=13098912254855678857}{Google Scholar} \;|\;
+  \href{https://mukj1.github.io/}{Homepage}
+\end{center}
+
+\section*{Education}
+
+\entry
+  {Indiana University Bloomington}
+  {08/2026 --}
+  {PhD Student, Sport Management}
+  {}
+
+\vspace{0.35em}
+
+\entry
+  {Beijing Sport University}
+  {08/2022 -- 06/2025}
+  {Master, Humanities and Social Sciences of Sports}
+  {}
+
+\vspace{0.35em}
+
+\entry
+  {Beijing Sport University}
+  {08/2018 -- 06/2022}
+  {Bachelor, Sport Economics and Management}
+  {}
+
+\section*{Publications}
+
+\publication{Song, H., Gao, J., Fan, S., \textbf{Yang, R.}, \& Liu, Z. (2025). The influence of immersion on revisit intention: Empirical evidence from tourists at the Beijing Winter Olympic venue ``Snow Ruyi'', \textit{International Journal of Sports Marketing and Sponsorship}, pp. 1--20. \url{https://doi.org/10.1108/IJSMS-07-2025-0344}}
+
+\publication{\textbf{Yang, R.} and Song, H. (2024). The spillover effect of Chinese sportswear brands' relationship quality: a perspective of Confucian yuanfen culture, \textit{International Journal of Sports Marketing and Sponsorship}, Vol. 25 No. 5, pp. 1105--1125. \url{https://doi.org/10.1108/IJSMS-02-2024-0049}}
+
+\section*{Conferences}
+
+\publication{Qian, T. Y., Chen, S., \textbf{Yang, R.}, \& Li, W. (2025, October). Human-AI collaboration in sport marketing research: Harnessing practical AI tools and applications. Presented (75-min panel) at the 2025 Sport Marketing Association (SMA) Conference, Phoenix-Glendale, AZ.}
+
+\publication{\textbf{Yang, R.} and Song, H. (2024, June). The factors influencing domestic sportswear brands' purchase intention: A perspective of self-congruity theory. Oral Presentation at the 10th Asian Pacific Conference of Exercise \& Sports Science (APCESS) 2024, Kaifeng, China.}
+
+\publication{\textbf{Yang, R.} and Song, H. (2024, June). The spillover effect of Chinese sportswear brands' relationship quality: A perspective of Confucian yuanfen culture. Oral Presentation at the 2024 International Chinese Society for Physical Activities and Health (ICSPAH) Annual Conference, Beijing, China.}
+
+\section*{Skills \& Certificate}
+
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.9in}@{\hspace{0.05in}}p{0.08in}@{\hspace{0.12in}}X@{}}
+Computers & : & SPSS, SmartPLS, Python, R \\
+Languages & : & Chinese, English \\
+Certificate & : & Sports Agent - Level Three by General Administration of Sport of China \\
+\end{tabularx}
+
+\section*{Awards}
+
+\begin{itemize}
+  \item 2024 Beijing Sport University National Scholarship
+  \item 2024 Beijing Sport University First-class Academic Scholarship
+  \item 2023 Beijing Sport University Second-class Academic Scholarship
+  \item 2022 Beijing Sport University Second-class Academic Scholarship
+\end{itemize}
+
+\end{document}
