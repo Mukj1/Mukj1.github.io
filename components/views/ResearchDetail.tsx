@@ -259,13 +259,6 @@ export const ResearchDetail: React.FC<ResearchDetailProps> = ({ paper, onBack })
               <p className="text-slate-800 dark:text-slate-200 font-serif italic">{paper.conference}</p>
             </div>
             
-            {paper.doi && (
-              <div>
-                <h4 className="font-mono text-xs text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3">DOI</h4>
-                <p className="text-slate-600 dark:text-slate-400 font-mono text-sm break-all">{paper.doi}</p>
-              </div>
-            )}
-
             <div>
               <h4 className="font-mono text-xs text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-3">Keywords</h4>
               <div className="flex flex-wrap gap-2">

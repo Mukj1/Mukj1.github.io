@@ -47,7 +47,6 @@ export const RESEARCH_DATA: ResearchPaper[] = [
     image: "/images/research/research-1.png",
     pdfUrl: "#",
     codeUrl: "https://doi.org/10.1108/IJSMS-07-2025-0344",
-    doi: "10.1145/12345678",
     bibtex: `@article{10.1108/IJSMS-07-2025-0344,
     author = {Song, Hemin and Gao, Jiaxu and Fan, Songmei and Yang, Ruichen and Liu, Zi},
     title = {The influence of immersion on revisit intention: empirical evidence from tourists at the Beijing Winter Olympic venue Snow Ruyi},
@@ -166,4 +165,3 @@ export const RESEARCH_SKILLS = [
   "Python",
   "R",
 ];
-
