@@ -84,7 +84,7 @@ export const About: React.FC = () => {
               Dr. Hemin Song
             </a>
             {" "}helped me build a solid foundation in research and guided me in completing and publishing my first research paper.
-            Currently, I look forward to pursuing my PhD under the supervision of{" "}
+            Currently, I look forward to pursuing my Ph.D. under the supervision of{" "}
             <a
               href="https://tyrealq.github.io/"
               target="_blank"
@@ -152,7 +152,7 @@ export const About: React.FC = () => {
             <div className="flex flex-col md:flex-row md:justify-between md:items-baseline border-b border-slate-100 dark:border-slate-800 pb-5">
               <div>
                 <div className="text-2xl font-serif text-slate-800 dark:text-slate-100">Indiana University Bloomington</div>
-                <div className="text-base text-slate-500 dark:text-slate-400 font-light mt-2">Incoming PhD Student in Sport Management</div>
+                <div className="text-base text-slate-500 dark:text-slate-400 font-light mt-2">Incoming Ph.D. Student in Sport Management</div>
               </div>
               <div className="text-sm font-mono text-slate-400 dark:text-slate-500 mt-2 md:mt-0">2026 - 2030(Expected)</div>
             </div>
@@ -182,4 +182,3 @@ export const About: React.FC = () => {
     </div>
   );
 };
-
