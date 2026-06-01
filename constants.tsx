@@ -24,7 +24,7 @@ export const PROFILE = {
   email: "ruicyang@iu.edu",
   location: "Jiaozuo, Henan, China",
   avatar: "/images/profile/avatar.png", 
-  cvLink: "/Ruichen_CV.pdf?v=20260601" 
+  cvLink: "/Ruichen_CV.pdf?v=20260601-cn" 
 };
 
 export const SOCIAL_LINKS: SocialLink[] = [
